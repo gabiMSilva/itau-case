@@ -1,0 +1,498 @@
+{
+  "id_oferta": "47",
+  "nome": "Porto Seguro Residência",
+  "produtos": [
+    {
+      "id_produto": "64",
+      "id_parceiro": "66",
+      "nome": "Porto Seguro Residência",
+      "vigencia": {
+        "quantidade": 1,
+        "unidade": "anos"
+      },
+      "importancia_base": {
+        "incremento": 50000,
+        "maximo": 700000,
+        "minimo": 100000,
+        "valor_sugerido": [
+          {
+            "tipo_imovel": 1,
+            "valor": 350000
+          },
+          {
+            "tipo_imovel": 2,
+            "valor": 300000
+          },
+          {
+            "tipo_imovel": 3,
+            "valor": 350000
+          }
+        ]
+      },
+      "coberturas": [
+        {
+          "id_cobertura": "13ee29a3-1df3-4466-9e41-43753ec74d82",
+          "nome": "Incêndio, Explosão, Implosão, Fumaça e Queda de Aeronave",
+          "descricao": "Curtir sua casa sem a preocupação de raios ou acidentes causados com panelas de pressão. Com essa garantia você tem a cobertura de prejuízos provocados por um incêndio, explosão, queda de raios, fumaça e queda de aeronave.",
+          "resumo": "Cobertura de prejuízos causados por incêndio, queda de raio, fumaça, explosão, implosão e queda de aeronave",
+          "cobertura_obrigatoria": true,
+          "identificador": "incendio",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 100000,
+              "maximo": 700000,
+              "incremento": 50000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 350000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 300000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 350000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [],
+          "dependencias": [],
+          "ocultar_descricao": true
+        },
+        {
+          "id_cobertura": "74a8d6b0-5287-4b5d-ab7d-686ad09d16c5",
+          "nome": "Danos Elétricos",
+          "descricao": "A geladeira queimou depois de um curto circuito? Você está protegido de danos provocados nas instalações e nos aparelhos elétricos por conta de uma descarga elétrica ou variações anormais de tensão, por exemplo.",
+          "resumo": "Cobertura de danos causados às instalações e aparelhos elétricos",
+          "cobertura_obrigatoria": false,
+          "identificador": "de",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 3000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 5000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 5000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 5000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [],
+          "dependencias": [],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "b9d27537-9833-444c-9a77-cfcf85cae486",
+          "nome": "Subtração de Bens",
+          "descricao": "Se os bens da sua casa forem subtraidos, com essa cobertura você não fica no prejuízo. Ela é ideal em casos de assalto ou arrombamento, além de cobrir também danos causados na estrutura da casa.",
+          "resumo": "Cobre perdas e danos aos bens da residência em caso de  subtração com ameaça, violencia ou mediante arrombamento",
+          "cobertura_obrigatoria": false,
+          "identificador": "subbens",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 3000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 6000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 5000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 6000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [],
+          "dependencias": [],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "5d75a882-3916-411b-93c9-c306aab91084",
+          "nome": "Quebra de Vidros",
+          "descricao": "Uma bolada na vidraça, ou um espelho quebrado? Essa cobertura garante a troca de vidros quebrados, troca de box e espelhos internos ou externos, cobre também louças sanitárias e cooktop de vidro por exemplo.",
+          "resumo": "Quebra de vidros, box e espelhos, internos ou externos",
+          "cobertura_obrigatoria": false,
+          "identificador": "vidros",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 3000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 5000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 5000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 5000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [],
+          "dependencias": [],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "da772d2e-f390-4cfd-a190-d9b8c4ef19a9",
+          "nome": "Responsabilidade Civil Familiar",
+          "descricao": "Um cano furado na sua residência afetou o apartamento do vizinho ou aquele vaso caiu na janela ao lado? Basta um pedido de desculpas e resto te ajudamos. Essa cobertura é ideal em casos de danos que  você ou algum morador da sua casa causou a outra pessoa ou para um imóvel por acidente.",
+          "resumo": "Causou um acidente a outra pessoa ou imóvel? Essa cobertura será útil",
+          "cobertura_obrigatoria": false,
+          "identificador": "rcfam",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 3000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 10000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 15000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 10000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [],
+          "dependencias": [],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "d943c4c4-eee2-4478-be27-5dfa6f130b4f",
+          "nome": "Vazamento de Tubulações",
+          "descricao": "A pia ou a banheira vazou? Pensando em você, temos essa cobertura para reparos da parte hidráulica em casos de vazamento de tubulações.",
+          "resumo": "Vazamento de água decorrente a rompimento de tubulação",
+          "cobertura_obrigatoria": false,
+          "identificador": "vaz_tub",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 3000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 3000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 3000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 3000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [],
+          "dependencias": [],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "aa9eb39f-cb64-4404-9b43-bf2f6408017b",
+          "nome": "Perda ou Pagamento de Aluguel",
+          "descricao": "A casa em que você mora ou aluga está sem condições de uso por conta de um incêndio, vendaval, impacto de veiculo ou tremor de terra e terremoto? Fique tranquilo! Nessa cobertura é garantido o pagamento do aluguel e condomínio por até 6 meses! Se a casa for alugada o pagamento será feito para o proprietário, se a casa for sua e você estiver morando nela esta cobertura garante o reembolso de outra moradia enquanto a sua casa é reparada.",
+          "resumo": "Cobre as despesas de aluguel por um período se a sua casa estiver sem condições de uso",
+          "cobertura_obrigatoria": false,
+          "identificador": "pagaluguel",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 3000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 10000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 8000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 10000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [
+            "veraneio"
+          ],
+          "dependencias": [],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "820edf05-bfe0-4274-93e3-cecaff333daf",
+          "nome": "Negócios em Casa",
+          "descricao": "Ideal para você que tem um escritório ou comércio em casa! Você está protegido caso tenha prejuízos em seus equipamentos nos seguintes acontecimentos: Danos elétricos, subtração de bens, incêndio, explosão ou queda de raios.",
+          "resumo": "Cobertura de equipamentos, utensílios e móveis do seu escritório ou comércio",
+          "cobertura_obrigatoria": false,
+          "identificador": "neg_casa",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 2000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 2000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 2000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 2000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [
+            "veraneio"
+          ],
+          "dependencias": [
+            "de",
+            "subbens"
+          ],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "aa05ec8c-e1df-4654-bea9-557923cba29f",
+          "nome": "Vendaval, Furacão, Ciclone, Tornado e Queda de Granizo",
+          "descricao": "Um vendaval ou uma chuva de granizo te trouxeram prejuízos? Essa garantia é ideal em casos de danos provocados por vendaval ou chuva de granizo que podem causar um destelhamento ou uma quebra de vidros.",
+          "resumo": "Cobre destelhamentos, queda de antenas e de árvores",
+          "cobertura_obrigatoria": false,
+          "identificador": "vendaval",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 3000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 6000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 5000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 6000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [],
+          "dependencias": [],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "61b70d59-5900-4709-9d78-04bb6bfc08ba",
+          "nome": "Tremor de Terra e Terremoto",
+          "descricao": "Já pensou em tremor ou terremoto? Essa garantia é ideal para cobrir sua casa caso sofra esse tipo de evento.",
+          "resumo": "Cobertura de conteúdo e os bens incorporados a ela, como antenas",
+          "cobertura_obrigatoria": false,
+          "identificador": "tremor",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 2000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 2000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 2000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 2000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [],
+          "dependencias": [],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "8e4005d3-4b8d-497f-b398-7bde6fb8cb0b",
+          "nome": "Responsabilidade Civil Empregador",
+          "descricao": "Tranquilidade para o seu funcionário com registro CLT... Ele está protegido caso sofra algum acidente durante o expediente, cobrindo despesas médicas, hospitalares e odontológicas.",
+          "resumo": "Cobre despesas médicas e odontológicas do funcionário na residencia segurada em caso de acidente durante o horário de trabalho",
+          "cobertura_obrigatoria": false,
+          "identificador": "rc_empregador",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 2000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 2000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 2000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 2000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [
+            "veraneio"
+          ],
+          "dependencias": [
+            "rcfam"
+          ],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "4cf481d4-4da4-4d31-b054-dfb160e9c9b2",
+          "nome": "Impacto de Veículos Terrestres",
+          "descricao": "Estamos com você todos os momentos, inclusive em casos de desmoronamento por impacto de veiculo de terceiros de sua casa. Essa garantia cobre prejuízos com muros, portões, paredes, vigas e colunas.",
+          "resumo": "Cobertura para a residência em caso de batida por veículos de terceiros",
+          "cobertura_obrigatoria": false,
+          "identificador": "impacve",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 3000,
+              "maximo": 50000,
+              "incremento": 1000,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 10000
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 10000
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 10000
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [
+            "apartamento"
+          ],
+          "dependencias": [],
+          "ocultar_descricao": false
+        },
+        {
+          "id_cobertura": "00e33efe-a32b-419e-b0c3-6e719b6bf1cc",
+          "nome": "Subtração de Bicicleta",
+          "descricao": "Essa cobertura é ideal para você que tem uma bike, pois com ela você tem proteção em caso de subtração dentro e fora da sua casa. Protege também se acontecer algum dano com a bike, decorrente de acidente com o veiculo que esteja fazendo o seu transporte.",
+          "resumo": "Cobertura em caso de subtração da sua bike seguida de ameaça, violência ou arrombamento",
+          "cobertura_obrigatoria": false,
+          "identificador": "sub_bike",
+          "importancias_segurada": [
+            {
+              "tipo": "valor",
+              "minimo": 2500,
+              "maximo": 50000,
+              "incremento": 0,
+              "valor_sugerido": [
+                {
+                  "tipo_imovel": 1,
+                  "valor": 0
+                },
+                {
+                  "tipo_imovel": 2,
+                  "valor": 0
+                },
+                {
+                  "tipo_imovel": 3,
+                  "valor": 0
+                }
+              ]
+            }
+          ],
+          "nao_incluso": [
+            "veraneio"
+          ],
+          "dependencias": [],
+          "ocultar_descricao": false
+        }
+      ],
+      "assistencias": [
+        {
+          "id_assistencia": "9d872f3f-16ac-4bbb-b4b9-c35dfed63605",
+          "nome": "plano Conforto",
+          "descricao": "",
+          "resumo": "",
+          "assistencia_obrigatoria": false,
+          "identificador": "pc-ref"
+        },
+        {
+          "id_assistencia": "94effb8d-2ef0-48c5-b27e-acc86982939b",
+          "nome": "plano Exclusive",
+          "descricao": "",
+          "resumo": "",
+          "assistencia_obrigatoria": false,
+          "identificador": "pe-ref"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "id_questao": "1c1f1c9d-fa98-49f0-8eac-d78ed1e40696",
+    "texto_questao": "o imóvel está?",
+    "respostas": [
+      {
+        "id_resposta": 1,
+        "texto_resposta": "ocupado"
+      },
+      {
+        "id_resposta": 2,
+        "texto_resposta": "desocupado"
+      }
+    ]
+  },
+  {
+    "id_questao": "ca708e31-29cb-46ee-b423-a71bf2dcf9f6",
+    "texto_questao": "o imóvel foi construído com",
+    "respostas": [
+      {
+        "id_resposta": 1,
+        "texto_resposta": "madeira"
+      },
+      {
+        "id_resposta": 2,
+        "texto_resposta": "alvenaria (tijolos, cimento, pedras ou blocos de concreto)"
+      }
+    ]
+  },
+  {
+    "id_questao": "8045c56a-a07c-416c-ac2e-4ee530076822",
+    "texto_questao": "o seguro é para qual tipo de imóvel?",
+    "respostas": [
+      {
+        "id_resposta": 1,
+        "texto_resposta": "casa"
+      },
+      {
+        "id_resposta": 2,
+        "texto_resposta": "apartamento"
+      },
+      {
+        "id_resposta": 3,
+        "texto_resposta": "chácaras, sítios ou fazendas"
+      }
+    ]
+  },
+  {
+    "id_questao": "c456ed99-1f9a-495d-b87b-d7245cb86ca0",
+    "texto_questao": "o imóvel está em condomínio fechado?",
+    "respostas": [
+      {
+        "id_resposta": 1,
+        "texto_resposta": "sim"
+      },
+      {
+        "id_resposta": 2,
+        "texto_resposta": "não"
+      }
+    ]
+  },
+  {
+    "id_questao": "0d79ceba-2a96-4eb7-9d3a-1a7aa1af3c63",
+    "texto_questao": "você usa o imóvel para",
+    "respostas": [
+      {
+        "id_resposta": 1,
+        "texto_resposta": "moradia"
+      },
+      {
+        "id_resposta": 2,
+        "texto_resposta": "veraneio"
+      }
+    ]
+  }
+]

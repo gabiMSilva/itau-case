@@ -1,0 +1,120 @@
+{
+  "item_risco": {
+    "imovel": {
+      "endereco": {
+        "bairro": "Jardim Popular",
+        "cep": "03670080",
+        "cidade": "São Paulo",
+        "complemento": "",
+        "estado": "SP",
+        "logradouro": "Travessa Benedita Barroso Rosa",
+        "numero": "999",
+        "pais": "BRA"
+      }
+    }
+  },
+  "oferta": {
+    "id_oferta": "47",
+    "produtos": [
+      {
+        "assistencias": [
+          {
+            "id_assistencia": "9d872f3f-16ac-4bbb-b4b9-c35dfed63605"
+          },
+          {
+            "id_assistencia": "94effb8d-2ef0-48c5-b27e-acc86982939b"
+          }
+        ],
+        "coberturas": [
+          {
+            "id_cobertura": "13ee29a3-1df3-4466-9e41-43753ec74d82",
+            "importancia_segurada": 350000
+          },
+          {
+            "id_cobertura": "74a8d6b0-5287-4b5d-ab7d-686ad09d16c5",
+            "importancia_segurada": 5000
+          },
+          {
+            "id_cobertura": "b9d27537-9833-444c-9a77-cfcf85cae486",
+            "importancia_segurada": 6000
+          },
+          {
+            "id_cobertura": "5d75a882-3916-411b-93c9-c306aab91084",
+            "importancia_segurada": 5000
+          },
+          {
+            "id_cobertura": "da772d2e-f390-4cfd-a190-d9b8c4ef19a9",
+            "importancia_segurada": 10000
+          },
+          {
+            "id_cobertura": "d943c4c4-eee2-4478-be27-5dfa6f130b4f",
+            "importancia_segurada": 3000
+          },
+          {
+            "id_cobertura": "aa9eb39f-cb64-4404-9b43-bf2f6408017b",
+            "importancia_segurada": 10000
+          },
+          {
+            "id_cobertura": "820edf05-bfe0-4274-93e3-cecaff333daf",
+            "importancia_segurada": 2000
+          },
+          {
+            "id_cobertura": "aa05ec8c-e1df-4654-bea9-557923cba29f",
+            "importancia_segurada": 6000
+          },
+          {
+            "id_cobertura": "61b70d59-5900-4709-9d78-04bb6bfc08ba",
+            "importancia_segurada": 2000
+          },
+          {
+            "id_cobertura": "8e4005d3-4b8d-497f-b398-7bde6fb8cb0b",
+            "importancia_segurada": 2000
+          },
+          {
+            "id_cobertura": "4cf481d4-4da4-4d31-b054-dfb160e9c9b2",
+            "importancia_segurada": 10000
+          }
+        ],
+        "id_produto": "64",
+        "importancia_base": 350000
+      }
+    ]
+  },
+  "proponente": {
+    "contatos": [
+      {
+        "valor": "email@email.com",
+        "tipo": "email"
+      },
+      {
+        "valor": "1199999999",
+        "tipo": "telefone"
+      }
+    ],
+    "cpf": "41891999826",
+    "data_nascimento": "1999-09-09",
+    "nome": "João Luiz de Exemplo"
+  },
+  "questoes": [
+    {
+      "id_questao": "1c1f1c9d-fa98-49f0-8eac-d78ed1e40696",
+      "resposta": 1
+    },
+    {
+      "id_questao": "ca708e31-29cb-46ee-b423-a71bf2dcf9f6",
+      "resposta": 2
+    },
+    {
+      "id_questao": "c456ed99-1f9a-495d-b87b-d7245cb86ca0",
+      "resposta": 2
+    },
+    {
+      "id_questao": "8045c56a-a07c-416c-ac2e-4ee530076822",
+      "resposta": 1
+    },
+    {
+      "id_questao": "0d79ceba-2a96-4eb7-9d3a-1a7aa1af3c63",
+      "resposta": 1
+    }
+  ]
+}

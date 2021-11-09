@@ -1,0 +1,1136 @@
+{
+  "id_simulacao": "b2febc95-4ba7-4a32-a556-03de999781d3",
+  "id_cotacao_parceiro": "5072484894379446",
+  "corretora": {
+    "taxa_corretagem": 25
+  },
+  "produtos": [
+    {
+      "id_produto": "64",
+      "coberturas": [
+        {
+          "id_cobertura": "4cf481d4-4da4-4d31-b054-dfb160e9c9b2",
+          "importancia_segurada": 10000,
+          "valor": 22.73,
+          "franquia": 300,
+          "franquia_percentual": 10,
+          "texto_franquia": "o valor da participação obrigatória do segurado (franquia) será de 10% das indenizações com mínimo de R$ 300,00",
+          "identificador": "impacve"
+        },
+        {
+          "id_cobertura": "aa9eb39f-cb64-4404-9b43-bf2f6408017b",
+          "importancia_segurada": 10000,
+          "valor": 7.27,
+          "franquia": 0,
+          "franquia_percentual": 0,
+          "texto_franquia": "",
+          "identificador": "pagaluguel"
+        },
+        {
+          "id_cobertura": "13ee29a3-1df3-4466-9e41-43753ec74d82",
+          "importancia_segurada": 350000,
+          "valor": 198.86,
+          "franquia": 0,
+          "franquia_percentual": 0,
+          "texto_franquia": "o valor dessa cobertura **não poderá ser superior ao valor do imóvel**",
+          "identificador": "incendio"
+        },
+        {
+          "id_cobertura": "8e4005d3-4b8d-497f-b398-7bde6fb8cb0b",
+          "importancia_segurada": 2000,
+          "valor": 4.2,
+          "franquia": 0,
+          "franquia_percentual": 0,
+          "texto_franquia": "",
+          "identificador": "rc_empregador"
+        },
+        {
+          "id_cobertura": "b9d27537-9833-444c-9a77-cfcf85cae486",
+          "importancia_segurada": 6000,
+          "valor": 304.11,
+          "franquia": 0,
+          "franquia_percentual": 0,
+          "texto_franquia": "",
+          "identificador": "subbens"
+        },
+        {
+          "id_cobertura": "aa05ec8c-e1df-4654-bea9-557923cba29f",
+          "importancia_segurada": 6000,
+          "valor": 97.33,
+          "franquia": 500,
+          "franquia_percentual": 10,
+          "texto_franquia": "o valor da participação obrigatória do segurado (franquia) será de 10% das indenizações com mínimo de R$ 500,00",
+          "identificador": "vendaval"
+        },
+        {
+          "id_cobertura": "5d75a882-3916-411b-93c9-c306aab91084",
+          "importancia_segurada": 5000,
+          "valor": 102.08,
+          "franquia": 0,
+          "franquia_percentual": 0,
+          "texto_franquia": "",
+          "identificador": "vidros"
+        },
+        {
+          "id_cobertura": "d943c4c4-eee2-4478-be27-5dfa6f130b4f",
+          "importancia_segurada": 3000,
+          "valor": 45.79,
+          "franquia": 1000,
+          "franquia_percentual": 10,
+          "texto_franquia": "o valor da participação obrigatória do segurado (franquia) será de 10% das indenizações com mínimo de R$ 1000,00",
+          "identificador": "vaz_tub"
+        },
+        {
+          "id_cobertura": "61b70d59-5900-4709-9d78-04bb6bfc08ba",
+          "importancia_segurada": 2000,
+          "valor": 1.6,
+          "franquia": 500,
+          "franquia_percentual": 10,
+          "texto_franquia": "o valor da participação obrigatória do segurado (franquia) será de 10% das indenizações com mínimo de R$ 500,00",
+          "identificador": "tremor"
+        },
+        {
+          "id_cobertura": "820edf05-bfe0-4274-93e3-cecaff333daf",
+          "importancia_segurada": 2000,
+          "valor": 15.73,
+          "franquia": 400,
+          "franquia_percentual": 10,
+          "texto_franquia": "o valor da participação obrigatória do segurado (franquia) será de 10% das indenizações com mínimo de R$ 400,00 para prejuízos decorrentes de Queda de Raio e Danos Elétricos",
+          "identificador": "neg_casa"
+        },
+        {
+          "id_cobertura": "da772d2e-f390-4cfd-a190-d9b8c4ef19a9",
+          "importancia_segurada": 10000,
+          "valor": 28.66,
+          "franquia": 0,
+          "franquia_percentual": 0,
+          "texto_franquia": "",
+          "identificador": "rcfam"
+        },
+        {
+          "id_cobertura": "74a8d6b0-5287-4b5d-ab7d-686ad09d16c5",
+          "importancia_segurada": 5000,
+          "valor": 122.11,
+          "franquia": 550,
+          "franquia_percentual": 10,
+          "texto_franquia": "o valor da participação obrigatória do segurado (franquia) será de 10% das indenizações com mínimo de R$ 550,00",
+          "identificador": "de"
+        }
+      ],
+      "assistencias": [
+        {
+          "nome": "plano Essencial",
+          "valor_assistencia": 0,
+          "atendimento": "somente rede referenciada (sem reembolso)",
+          "uso": "até 3 vezes durante a vigência*",
+          "descricao": "ex.: você pode usar duas vezes o encanador e uma vez o chaveiro ou usar três vezes o vidraceiro.",
+          "servicos": [
+            {
+              "nome": "ENCANADOR",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REVERSÃO DE GÁS PARA FOGÃO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE MÁQUINA DE SECAR ROUPA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS EM GELADEIRA e FRIGOBAR",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "CHAVEIRO COMUM",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "ELETRICISTA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "VIDRACEIRO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE FOGÃO, COOK TOP E FORNO, A GÁS",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE MÁQUINA DE LAVAR LOUÇA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS EM GELADEIRA MODELO SIDE BY SIDE",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE CONGELADOR FREEZER",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "LAVADORA DE ROUPAS LAVA E SECA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS EM DEPURADOR E EXAUSTOR DE AR",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPARO MÁQUINA DE LAVAR ROUPA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE TELEFONIA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE FORNO MICROONDAS",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "HOSPEDAGEM DE ANIMAIS DOMÉSTICOS",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "CAÇAMBA",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "COBERTURA PROVISÓRIA DE TELHADOS",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "LIMPEZA",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "GUARDA DA RESIDENCIA",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "HOSPEDAGEM",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "CUIDADOR DE CRIANÇAS E IDOSOS",
+              "tipo": "sinistro"
+            }
+          ]
+        },
+        {
+          "id_assistencia": "9d872f3f-16ac-4bbb-b4b9-c35dfed63605",
+          "nome": "plano Conforto",
+          "valor_assistencia": 289.35,
+          "atendimento": "somente rede referenciada (sem reembolso)",
+          "uso": "valor total de utilização será de R$ 600 durante a vigência e cada serviço terá um valor máximo para utilização*",
+          "descricao": "",
+          "servicos": [
+            {
+              "nome": "REVERSÃO DE GÁS PARA FOGÃO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE CONGELADOR FREEZER",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE MÁQUINA DE LAVAR LOUÇA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS EM DEPURADOR E EXAUSTOR DE AR",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "ELETRICISTA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE FORNO MICROONDAS",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS EM GELADEIRA MODELO SIDE BY SIDE",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE TELEFONIA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS AR CONDICIONADO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS EM GELADEIRA e FRIGOBAR",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPARO MÁQUINA DE LAVAR ROUPA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "VIDRACEIRO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "CHAVEIRO COMUM",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE MÁQUINA DE SECAR ROUPA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "ENCANADOR",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE FOGÃO, COOK TOP E FORNO, A GÁS",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "DESENTUPIMENTO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "LAVADORA DE ROUPAS LAVA E SECA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "HELP DESK SMART TV",
+              "tipo": "help_desk_casa"
+            },
+            {
+              "nome": "HELP DESK VIDEO GAME",
+              "tipo": "help_desk_casa"
+            },
+            {
+              "nome": "HELP DESK CELULAR OU SMARTPHONE",
+              "tipo": "help_desk_casa"
+            },
+            {
+              "nome": "HELP DESK EM MICRO RESIDENCIAL",
+              "tipo": "help_desk_casa"
+            },
+            {
+              "nome": "HELP DESK EQUIPAMENTO APPLE",
+              "tipo": "help_desk_casa"
+            },
+            {
+              "nome": "HELP DESK TABLET",
+              "tipo": "help_desk_casa"
+            },
+            {
+              "nome": "CAÇAMBA",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "COBERTURA PROVISÓRIA DE TELHADOS",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "HOSPEDAGEM",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "LIMPEZA",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "GUARDA DA RESIDENCIA",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "CUIDADOR DE CRIANÇAS E IDOSOS",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "HOSPEDAGEM DE ANIMAIS DOMÉSTICOS",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "PET RESIDÊNCIA",
+              "tipo": "pet_residencia"
+            },
+            {
+              "nome": "HELP DESK TABLET",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK VIDEO GAME",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK EM MICRO RESIDENCIAL",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK ATENDIMENTO MICRO",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK CELULAR OU SMARTPHONE",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK SMART TV",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK EQUIPAMENTO APPLE",
+              "tipo": "help_desk_telefonico"
+            }
+          ]
+        },
+        {
+          "id_assistencia": "94effb8d-2ef0-48c5-b27e-acc86982939b",
+          "nome": "plano Exclusive",
+          "valor_assistencia": 747.86,
+          "atendimento": "somente rede referenciada (sem reembolso)",
+          "uso": "valor total de utilização será de R$ 1.000 durante a vigência e cada serviço terá um valor máximo para utilização*",
+          "descricao": "",
+          "servicos": [
+            {
+              "nome": "COBERTURA PROVISÓRIA DE TELHADOS",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "HOSPEDAGEM",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "CAÇAMBA",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "LIMPEZA",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "GUARDA DA RESIDENCIA",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "CUIDADOR DE CRIANÇAS E IDOSOS",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "HOSPEDAGEM DE ANIMAIS DOMÉSTICOS",
+              "tipo": "sinistro"
+            },
+            {
+              "nome": "PET RESIDÊNCIA",
+              "tipo": "pet_residencia"
+            },
+            {
+              "nome": "HELP DESK CELULAR OU SMARTPHONE",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK SMART TV",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK TABLET",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK VIDEO GAME",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK ATENDIMENTO MICRO",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "HELP DESK EQUIPAMENTO APPLE",
+              "tipo": "help_desk_telefonico"
+            },
+            {
+              "nome": "REVERSÃO DE GÁS PARA FOGÃO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE MÁQUINA DE SECAR ROUPA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "LAVADORA DE ROUPAS LAVA E SECA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "INSTALAÇÃO DE VENTILADOR DE TETO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "VIDRACEIRO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE FORNO MICROONDAS",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "ELETRICISTA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "CAÇA VAZAMENTO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "MUDANÇA DE MOBILIÁRIO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "LIMPEZA CAIXA DE ÁGUA ATÉ 4000L",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE CONGELADOR FREEZER",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "DESENTUPIMENTO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "CONECTIVIDADE",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "LIMPEZA E DESENTUPIMENTO DE CALHAS",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPARO MÁQUINA DE LAVAR ROUPA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "CHAVEIRO COMUM",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "BARRA DE APOIO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "ASSISTÊNCIA EM ANTENAS",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS EM GELADEIRA e FRIGOBAR",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "INSTALACAO DE FECHADURA TRAVA TETRA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS EM GELADEIRA MODELO SIDE BY SIDE",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE FOGÃO, COOK TOP E FORNO, A GÁS",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "ENCANADOR",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "INSTALAÇÃO DE KIT FIXAÇÃO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "SUBSTITUIÇÃO DE TELHAS E CUMEEIRAS",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "DESINSETIZAÇÃO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS EM DEPURADOR E EXAUSTOR DE AR",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS AR CONDICIONADO",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE TELEFONIA",
+              "tipo": "emergencial"
+            },
+            {
+              "nome": "REPAROS DE MÁQUINA DE LAVAR LOUÇA",
+              "tipo": "emergencial"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "opcoes_pagamento": [
+    {
+      "id_opcao_pagamento": "1",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 1,
+      "valor_parcela": 950.46,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "2",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 2,
+      "valor_parcela": 475.23,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "3",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 3,
+      "valor_parcela": 316.82,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "4",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 4,
+      "valor_parcela": 237.62,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "5",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 5,
+      "valor_parcela": 190.1,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "6",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 6,
+      "valor_parcela": 158.41,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "7",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 7,
+      "valor_parcela": 143.25,
+      "valor_total": 1002.74,
+      "variante": "padrao",
+      "iof": 68.92,
+      "iof_percentual": 7.38,
+      "juros": 48.68,
+      "juros_percentual": 5.1
+    },
+    {
+      "id_opcao_pagamento": "8",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 8,
+      "valor_parcela": 126.53,
+      "valor_total": 1012.24,
+      "variante": "padrao",
+      "iof": 69.57,
+      "iof_percentual": 7.38,
+      "juros": 57.53,
+      "juros_percentual": 6.03
+    },
+    {
+      "id_opcao_pagamento": "9",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 9,
+      "valor_parcela": 113.53,
+      "valor_total": 1021.75,
+      "variante": "padrao",
+      "iof": 70.22,
+      "iof_percentual": 7.38,
+      "juros": 66.39,
+      "juros_percentual": 6.95
+    },
+    {
+      "id_opcao_pagamento": "10",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 10,
+      "valor_parcela": 103.13,
+      "valor_total": 1031.25,
+      "variante": "padrao",
+      "iof": 70.88,
+      "iof_percentual": 7.38,
+      "juros": 75.24,
+      "juros_percentual": 7.87
+    },
+    {
+      "id_opcao_pagamento": "11",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 11,
+      "valor_parcela": 94.66,
+      "valor_total": 1040.76,
+      "variante": "padrao",
+      "iof": 71.53,
+      "iof_percentual": 7.38,
+      "juros": 84.09,
+      "juros_percentual": 8.79
+    },
+    {
+      "id_opcao_pagamento": "12",
+      "recorrencia": false,
+      "metodo": "credit_card",
+      "parcelas": 12,
+      "valor_parcela": 87.54,
+      "valor_total": 1050.26,
+      "variante": "padrao",
+      "iof": 72.18,
+      "iof_percentual": 7.38,
+      "juros": 92.94,
+      "juros_percentual": 9.71
+    },
+    {
+      "id_opcao_pagamento": "13",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 1,
+      "valor_parcela": 902.94,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "14",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 2,
+      "valor_parcela": 451.47,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "15",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 3,
+      "valor_parcela": 300.98,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "16",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 4,
+      "valor_parcela": 225.74,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "17",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 5,
+      "valor_parcela": 180.59,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "18",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 6,
+      "valor_parcela": 150.49,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "19",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 7,
+      "valor_parcela": 129,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "20",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 8,
+      "valor_parcela": 112.87,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "21",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 9,
+      "valor_parcela": 100.33,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "22",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 10,
+      "valor_parcela": 90.33,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "23",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 11,
+      "valor_parcela": 82.09,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "24",
+      "recorrencia": false,
+      "metodo": "credit_card_porto",
+      "parcelas": 12,
+      "valor_parcela": 75.25,
+      "valor_total": 902.94,
+      "variante": "padrao",
+      "iof": 62.06,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "25",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 1,
+      "valor_parcela": 950.46,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "26",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 2,
+      "valor_parcela": 475.23,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "27",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 3,
+      "valor_parcela": 316.82,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "28",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 4,
+      "valor_parcela": 237.62,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "29",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 5,
+      "valor_parcela": 190.1,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "30",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 6,
+      "valor_parcela": 158.41,
+      "valor_total": 950.46,
+      "variante": "padrao",
+      "iof": 65.32,
+      "iof_percentual": 7.38,
+      "juros": 0,
+      "juros_percentual": 0
+    },
+    {
+      "id_opcao_pagamento": "31",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 7,
+      "valor_parcela": 143.25,
+      "valor_total": 1002.74,
+      "variante": "padrao",
+      "iof": 68.92,
+      "iof_percentual": 7.38,
+      "juros": 48.68,
+      "juros_percentual": 5.1
+    },
+    {
+      "id_opcao_pagamento": "32",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 8,
+      "valor_parcela": 126.53,
+      "valor_total": 1012.24,
+      "variante": "padrao",
+      "iof": 69.57,
+      "iof_percentual": 7.38,
+      "juros": 57.53,
+      "juros_percentual": 6.03
+    },
+    {
+      "id_opcao_pagamento": "33",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 9,
+      "valor_parcela": 113.53,
+      "valor_total": 1021.75,
+      "variante": "padrao",
+      "iof": 70.22,
+      "iof_percentual": 7.38,
+      "juros": 66.39,
+      "juros_percentual": 6.95
+    },
+    {
+      "id_opcao_pagamento": "34",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 10,
+      "valor_parcela": 103.13,
+      "valor_total": 1031.25,
+      "variante": "padrao",
+      "iof": 70.88,
+      "iof_percentual": 7.38,
+      "juros": 75.24,
+      "juros_percentual": 7.87
+    },
+    {
+      "id_opcao_pagamento": "35",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 11,
+      "valor_parcela": 94.66,
+      "valor_total": 1040.76,
+      "variante": "padrao",
+      "iof": 71.53,
+      "iof_percentual": 7.38,
+      "juros": 84.09,
+      "juros_percentual": 8.79
+    },
+    {
+      "id_opcao_pagamento": "36",
+      "recorrencia": false,
+      "metodo": "direct_debit",
+      "parcelas": 12,
+      "valor_parcela": 87.54,
+      "valor_total": 1050.26,
+      "variante": "padrao",
+      "iof": 72.18,
+      "iof_percentual": 7.38,
+      "juros": 92.94,
+      "juros_percentual": 9.71
+    }
+  ],
+  "metodos_pagamento": [
+    {
+      "metodo": "credit_card",
+      "cartoes": [
+        {
+          "tipo": "MasterCard"
+        },
+        {
+          "tipo": "Visa"
+        },
+        {
+          "tipo": "Diners"
+        }
+      ]
+    },
+    {
+      "metodo": "direct_debit",
+      "bancos": [
+        {
+          "nome": "BANCO DO BRASIL",
+          "codigo": "1"
+        },
+        {
+          "nome": "BANCO DO NORDESTE",
+          "codigo": "4"
+        },
+        {
+          "nome": "SANTANDER BANESPA",
+          "codigo": "33"
+        },
+        {
+          "nome": "BANESE",
+          "codigo": "47"
+        },
+        {
+          "nome": "BANCO DE BRASÍLIA",
+          "codigo": "70"
+        },
+        {
+          "nome": "BANCO CECRED",
+          "codigo": "85"
+        },
+        {
+          "nome": "CAIXA ECONOMICA FEDERAL",
+          "codigo": "104"
+        },
+        {
+          "nome": "BRADESCO",
+          "codigo": "237"
+        },
+        {
+          "nome": "BANCO ITAU",
+          "codigo": "341"
+        },
+        {
+          "nome": "HSBC BANK BRASIL",
+          "codigo": "399"
+        },
+        {
+          "nome": "BANCO SAFRA ",
+          "codigo": "422"
+        },
+        {
+          "nome": "BANCO RURAL S/A",
+          "codigo": "453"
+        },
+        {
+          "nome": "CITIBANK",
+          "codigo": "745"
+        },
+        {
+          "nome": "BANCO SICRED",
+          "codigo": "748"
+        },
+        {
+          "nome": "BANCOOB",
+          "codigo": "756"
+        }
+      ]
+    },
+    {
+      "metodo": "credit_card_porto",
+      "cartoes": [
+        {
+          "tipo": "PortoSeguro"
+        }
+      ]
+    }
+  ]
+}
