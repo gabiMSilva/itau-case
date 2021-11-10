@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, Fragment, useEffect, useState } from "react";
+import { ChangeEvent, Fragment, useEffect, useState } from "react";
 import { Box } from "@mui/system";
 import {
   FormControlLabel,
@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 
 import { Navbar } from "../../components";
-import { fetchOfferQuestions } from "../../services/PropertyService";
+import { fetchOfferQuestions } from "../../services/QuestionsService";
 import { QuestionType } from "../../types/QuestionType";
 import useStyles from "./style";
 import clsx from "clsx";
@@ -65,8 +65,6 @@ const PropertyStep = () => {
     setFormData(tempData);
   };
 
-  const onSubmit = (event: FormEvent<HTMLFormElement>) => {};
-
   return (
     <>
       <Navbar step="1" title="Nos conte um pouco sobre o seu imóvel" />
@@ -85,73 +83,76 @@ const PropertyStep = () => {
           p={theme.spacing(5)}
           maxWidth={theme.breakpoints.down("md") ? "100%" : "50%"}
         >
-          <form onSubmit={onSubmit}>
-            {questions.map((question) => (
-              <Fragment key={question.id_questao}>
-                <Typography
-                  className={clsx(
-                    question.id_questao === IS_PROPERTY_GROUP_QUESTION_ID &&
-                      disabledPropertyGroup &&
-                      classes.disabledText
-                  )}
-                  fontSize={25}
-                >
-                  {question.texto_questao}
-                </Typography>
-                <RadioGroup
-                  aria-label={question.texto_questao}
-                  name={question.id_questao}
-                  row
-                  onChange={(event) => onRadioChange(event, question)}
-                >
-                  {question.respostas.map((response) => (
-                    <Box key={response.id_resposta} m={theme.spacing(3, 0)}>
-                      <FormControlLabel
-                        value={response.id_resposta}
-                        control={
-                          <Radio
-                            required={
-                              question.id_questao !==
-                                IS_PROPERTY_GROUP_QUESTION_ID ||
-                              !disabledPropertyGroup
-                            }
-                          />
-                        }
-                        label={response.texto_resposta}
-                        disabled={
-                          question.id_questao ===
-                            IS_PROPERTY_GROUP_QUESTION_ID &&
-                          disabledPropertyGroup
-                        }
-                      />
-                    </Box>
-                  ))}
-                </RadioGroup>
-              </Fragment>
-            ))}
-            <Box
-              display="flex"
-              justifyContent="end"
-              position="fixed"
-              bottom={theme.spacing(2)}
-              right={theme.spacing(2)}
-            >
-              <Button
-                type="submit"
-                variant="contained"
-                size="large"
-                onClick={() => navigate("/coverage")}
-                disabled={
-                  (disabledPropertyGroup && Object.keys(formData || {}).length < questions.length - 1) ||
-                  (!disabledPropertyGroup && Object.keys(formData || {}).length < questions.length) ||
-                  loading ||
-                  questions.length === 0
-                }
+          {questions.map((question) => (
+            <Fragment key={question.id_questao}>
+              <Typography
+                className={clsx(
+                  question.id_questao === IS_PROPERTY_GROUP_QUESTION_ID &&
+                    disabledPropertyGroup &&
+                    classes.disabledText
+                )}
+                fontSize={25}
               >
-                <Typography padding={theme.spacing(0, 3)}>Continuar</Typography>
-              </Button>
-            </Box>
-          </form>
+                {question.texto_questao}
+              </Typography>
+              <RadioGroup
+                aria-label={question.texto_questao}
+                name={question.id_questao}
+                row
+                onChange={(event) => onRadioChange(event, question)}
+              >
+                {question.respostas.map((response) => (
+                  <Box key={response.id_resposta} m={theme.spacing(3, 0)}>
+                    <FormControlLabel
+                      value={response.id_resposta}
+                      control={
+                        <Radio
+                          required={
+                            question.id_questao !==
+                              IS_PROPERTY_GROUP_QUESTION_ID ||
+                            !disabledPropertyGroup
+                          }
+                        />
+                      }
+                      label={response.texto_resposta}
+                      disabled={
+                        question.id_questao === IS_PROPERTY_GROUP_QUESTION_ID &&
+                        disabledPropertyGroup
+                      }
+                    />
+                  </Box>
+                ))}
+              </RadioGroup>
+            </Fragment>
+          ))}
+          <Box
+            display="flex"
+            justifyContent="end"
+            position="fixed"
+            bottom={theme.spacing(2)}
+            right={theme.spacing(2)}
+          >
+            <Button
+              type="submit"
+              variant="contained"
+              size="large"
+              onClick={() =>
+                navigate("/coverage", {
+                  state: { form: { property: formData } },
+                })
+              }
+              disabled={
+                (disabledPropertyGroup &&
+                  Object.keys(formData || {}).length < questions.length - 1) ||
+                (!disabledPropertyGroup &&
+                  Object.keys(formData || {}).length < questions.length) ||
+                loading ||
+                questions.length === 0
+              }
+            >
+              <Typography padding={theme.spacing(0, 3)}>Continuar</Typography>
+            </Button>
+          </Box>
         </Box>
       )}
     </>
