@@ -23,6 +23,10 @@ const CoverageStep: FC = () => {
   const [selectedsCoverage, setSelectedCoverage] = useState<string[]>([]);
 
   useEffect(() => {
+    if (!state?.form) navigate("/");
+  }, [navigate, state?.form]);
+
+  useEffect(() => {
     const loadQuestions = async () => {
       setLoading(true);
       const result = await fetchCoverageOptions();
