@@ -1,26 +1,23 @@
+import { AxiosResponse } from "axios";
 import { CoverageType } from "../types/CoverageType";
 import { QuestionType } from "../types/QuestionType";
+import axios from "./axios";
 
 export const fetchOfferQuestions = async () => {
-  const questions = require("./mock/get_response_ofertas_questoes.json");
+  const response: AxiosResponse<QuestionType[]> = await axios.get("/questoes");
+  return response.data;
+};
 
-  const promise = new Promise<QuestionType[]>((resolve) => {
-    setTimeout(() => {
-      resolve(questions);
-    }, 1000);
-  });
-
-  return await promise;
+type CoverageResponseType = {
+  produtos: {
+    coberturas: CoverageType[];
+  }[];
 };
 
 export const fetchCoverageOptions = async () => {
-  const options = require("./mock/get_response_ofertas_residencial.json");
+  const response: AxiosResponse<CoverageResponseType> = await axios.get(
+    "/coberturas"
+  );
 
-  const promise = new Promise<CoverageType[]>((resolve) => {
-    setTimeout(() => {
-      resolve(options.produtos[0].coberturas);
-    }, 1000);
-  });
-
-  return await promise;
+  return response.data.produtos[0].coberturas;
 };
