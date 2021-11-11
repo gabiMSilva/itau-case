@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import {
   Alert,
   AlertColor,
+  Backdrop,
+  CircularProgress,
   Grid,
   Snackbar,
   Typography,
@@ -85,7 +87,6 @@ const ProfileStep = () => {
             result: response,
           },
         });
-        console.log("RESPONSE", response);
       })
       .catch((error) => {
         setAlert({ severity: "error", message: error });
@@ -97,6 +98,9 @@ const ProfileStep = () => {
 
   return (
     <>
+      <Backdrop invisible open={loading}>
+        <CircularProgress />
+      </Backdrop>
       <Navbar
         step="3"
         title="Chegou a hora de reunir algumas informações sobre o titular do seguro, vamos lá?"

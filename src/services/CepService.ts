@@ -1,8 +1,10 @@
-export const getAddresDataByCep = async (cep: string) => {
-  const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
-    mode: "cors",
-    method: "GET",
-  }).then((response) => response.json());
+import axios, { AxiosResponse } from "axios";
+import { AddressType } from "../types/PofileType";
 
-  return response;
+export const getAddresDataByCep = async (cep: string) => {
+  const response: AxiosResponse<AddressType> = await axios.get(
+    `https://viacep.com.br/ws/${cep}/json/`
+  );
+
+  return response.data;
 };
