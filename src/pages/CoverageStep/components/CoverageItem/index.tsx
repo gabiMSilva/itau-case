@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC, useState } from "react";
+import { ChangeEvent, FC, useState } from "react";
 import { Checkbox, Paper, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 import clsx from "clsx";

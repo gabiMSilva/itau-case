@@ -18,7 +18,7 @@ const Navbar: FC<NavbarParamsType> = ({
   const theme = useTheme();
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} data-testid="navbar">
       <AppBar position="static" elevation={0}>
         <Toolbar>
           <Circle content={step} />

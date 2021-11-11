@@ -17,6 +17,7 @@ const Circle: FC<CircleParamsType> = ({ content }: CircleParamsType) => {
       width={theme.spacing(4)}
       height={theme.spacing(4)}
       className={classes.circle}
+      data-testid="circle"
     >
       <Typography fontSize={15} fontWeight={700}>
         {content}

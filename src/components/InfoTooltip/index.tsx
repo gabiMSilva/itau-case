@@ -27,8 +27,9 @@ const InfoTooltip: FC<InfoTooltipParamsType> = ({
       open={showTooltip}
       onOpen={() => setShowTooltip(true)}
       onClose={() => setShowTooltip(false)}
+      data-testid="tooltip"
     >
-      <IconButton color={color} onClick={() => setShowTooltip(true)}>
+      <IconButton data-testid="action-btn" color={color} onClick={() => setShowTooltip(true)}>
         <InfoIcon />
       </IconButton>
     </Tooltip>
