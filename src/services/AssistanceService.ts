@@ -1,8 +1,8 @@
-import { AssistanceRequestType } from "../types/AssistanceType";
+import { RequestAssistanceType } from "../types/AssistanceType";
 import axios from "./axios";
 
-export const postAssistanceData = async (data: AssistanceRequestType) => {
+export const postAssistanceData = async (data: RequestAssistanceType) => {
   const response = await axios.post("/assistencias", data);
 
-  return response;
+  return response?.data;
 };

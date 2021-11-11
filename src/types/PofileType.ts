@@ -3,7 +3,7 @@ export type ProfileType = {
   cpf: string;
   birthday: number;
   cep: string;
-  number?: string;
+  number: string;
   address: string;
   district: string;
   city: string;

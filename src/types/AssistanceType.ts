@@ -40,7 +40,7 @@ export type RequestAssistanceType = {
   proponente: {
     contatos: ContactRequestType[];
     cpf: string;
-    data_nascimento: string;
+    data_nascimento: number;
     nome: string;
   };
   questoes: QuestionRequestType[];

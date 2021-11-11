@@ -5,6 +5,9 @@ const useStyles = makeStyles((theme: Theme) => ({
   disabledText: {
     color: "grey",
   },
+  invalidModal: {
+    padding: theme.spacing(3)
+  }
 }));
 
 export default useStyles;

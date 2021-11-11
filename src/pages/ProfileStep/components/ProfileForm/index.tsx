@@ -1,16 +1,23 @@
-import React, { ChangeEvent } from "react";
+import { ChangeEvent } from "react";
 import { DatePicker, LocalizationProvider } from "@mui/lab";
 import { Button, Grid, TextField, Typography, useTheme } from "@mui/material";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import InputMask from "react-input-mask";
 import * as yup from "yup";
-import { useFormik } from "formik";
+import { FormikHelpers, useFormik } from "formik";
 
 import { getAddresDataByCep } from "../../../../services/CepService";
 import { AddressType, ProfileType } from "../../../../types/PofileType";
 import { Box } from "@mui/system";
 
-const ProfileForm = () => {
+type ProfileFormParamsType = {
+  onSubmit: (
+    values: ProfileType,
+    formikHelpers: FormikHelpers<ProfileType>
+  ) => void | Promise<any>;
+};
+
+const ProfileForm = ({ onSubmit }: ProfileFormParamsType) => {
   const theme = useTheme();
 
   const gridParams = {
@@ -35,9 +42,7 @@ const ProfileForm = () => {
       number: "",
       complement: "",
     },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
+    onSubmit: onSubmit,
     validationSchema: yup.object().shape({
       name: yup
         .string()
@@ -65,7 +70,7 @@ const ProfileForm = () => {
       city: yup.string().required("Você esqueceu de informar sua cidade"),
       state: yup.string().required("Você esqueceu de informar seu estado"),
       number: yup
-        .number()
+        .string()
         .required("Você esqueceu de informar o número do seu endereço"),
       complement: yup.string(),
     }),
@@ -298,6 +303,7 @@ const ProfileForm = () => {
           disabled={
             !(Object.keys(formik.errors || {}).length === 0 && !!formik.dirty)
           }
+          onClick={formik.submitForm}
         >
           <Typography padding={theme.spacing(0, 3)}>Finalizar</Typography>
         </Button>
