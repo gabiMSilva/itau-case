@@ -11,9 +11,6 @@ const theme = createTheme({
       main: "#FDFDFD",
       contrastText: "#101010",
     },
-    error: {
-      main: "#ff7575",
-    },
   },
   typography: {
     fontFamily: "Sarala",

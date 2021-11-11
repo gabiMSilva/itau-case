@@ -86,7 +86,7 @@ const CoverageStep: FC = () => {
               variant="contained"
               size="large"
               onClick={() => {
-                navigate("/profileForm", {
+                navigate("/profile", {
                   state: {
                     form: { ...state.form, coverages: selectedsCoverage },
                   },
