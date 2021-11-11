@@ -1,0 +1,2 @@
+Adicionar opções inválidas de resposta no backend
+Adicionar opções "dependentes" de outra questão no backend

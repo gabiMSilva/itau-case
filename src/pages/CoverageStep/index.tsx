@@ -1,3 +1,4 @@
+import { FC, useEffect, useState } from "react";
 import {
   Grid,
   useTheme,
@@ -6,7 +7,6 @@ import {
   Button,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import React, { FC, useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { Navbar } from "../../components";
 import { fetchCoverageOptions } from "../../services/QuestionsService";
@@ -65,13 +65,19 @@ const CoverageStep: FC = () => {
           justifyContent="center"
           width="100%"
           m={theme.spacing(4)}
+          data-testid="loading"
         >
           <CircularProgress />
         </Box>
       ) : (
-        <Grid container flexDirection="row" flexWrap="wrap">
+        <Grid
+          container
+          flexDirection="row"
+          flexWrap="wrap"
+          data-testid="coverage-step"
+        >
           {coverages.map((coverage) => (
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={4} key={coverage.id_cobertura}>
               <CoverageItem
                 coverage={coverage}
                 onChange={onCheckCoverageItem}
@@ -96,7 +102,8 @@ const CoverageStep: FC = () => {
                   },
                 });
               }}
-              disabled={coverages.length === 0 || loading}
+              disabled={coverages.length === 0}
+              data-testid="submit-button"
             >
               <Typography padding={theme.spacing(0, 3)}>Continuar</Typography>
             </Button>

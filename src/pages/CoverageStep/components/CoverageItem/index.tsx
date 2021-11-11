@@ -33,22 +33,23 @@ const CoverageItem: FC<CoverageParamsType> = ({
 
   return (
     <Paper square className={clsx(classes.paper)}>
-      <Box
-        display="flex"
-        alignItems="center"
-        justifyContent="start"
-      >
+      <Box display="flex" alignItems="center" justifyContent="start">
         <Checkbox
           checked={selected}
           classes={{ root: classes.checkbox }}
           onChange={handleChange}
+          name={coverage.id_cobertura}
         />
         <Typography fontWeight="bold">{coverage.nome}</Typography>
         <InfoTooltip color="primary" info={coverage.resumo} />
       </Box>
       <Typography m={theme.spacing(3, 0)}>{coverage.descricao}</Typography>
       {coverage.cobertura_obrigatoria && (
-        <Typography color={theme.palette.primary.main} mt={theme.spacing(2)} fontSize={12}>
+        <Typography
+          color={theme.palette.primary.main}
+          mt={theme.spacing(2)}
+          fontSize={12}
+        >
           ITEM OBRIGATÓRIO
         </Typography>
       )}
