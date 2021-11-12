@@ -1,4 +1,5 @@
 import {
+  Button,
   Card,
   CardContent,
   Grid,
@@ -11,13 +12,46 @@ import {
   useTheme,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
-import { useLocation } from "react-router";
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router";
 import { Navbar } from "../../components";
+import { CoverageResultType } from "../../types/CoverageType";
+import CoverageItem from "./components/CoverageItem";
+
+type PaymentOptionsType = {
+  id_opcao_pagamento: string;
+  recorrencia: boolean;
+  metodo: string;
+  parcelas: number;
+  valor_parcela: number;
+  valor_total: number;
+  variante: "padrao";
+  iof: number;
+  iof_percentual: number;
+  juros: 0;
+  juros_percentual: 0;
+};
+
+type StateParamType = {
+  state: {
+    result: {
+      produtos: {
+        coberturas: CoverageResultType[];
+      }[];
+      opcoes_pagamento: PaymentOptionsType[];
+    };
+  };
+};
 
 const ResultStep = () => {
-  const { state } = useLocation();
+  const { state }: StateParamType = useLocation();
   const theme = useTheme();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log("statee", state?.result);
+    if (!state?.result) navigate("/");
+  }, []);
 
   return (
     <>
@@ -32,7 +66,11 @@ const ResultStep = () => {
           Parabéns! Chegamos à etapa final
         </Typography>
 
-        <Typography fontSize={20} margin={theme.spacing(2, 0)} fontWeight="bold">
+        <Typography
+          fontSize={20}
+          margin={theme.spacing(2, 0)}
+          fontWeight="bold"
+        >
           Opções de pagamento
         </Typography>
         <Grid container direction="row" spacing={theme.spacing(3)}>
@@ -47,6 +85,7 @@ const ResultStep = () => {
                   aria-label="Tabela de opção de pagamento em cartão"
                   size="small"
                 >
+                  <Typography></Typography>
                   <TableHead>
                     <TableRow>
                       <TableCell>Qtd de Parcelas</TableCell>
@@ -60,24 +99,17 @@ const ResultStep = () => {
                         (item: { metodo: string }) =>
                           item.metodo === "credit_card"
                       )
-                      .map(
-                        (row: {
-                          id_opcao_pagamento: React.Key | null | undefined;
-                          parcelas: string;
-                          valor_parcela: string;
-                          valor_total: string;
-                        }) => (
-                          <TableRow key={row.id_opcao_pagamento}>
-                            <TableCell align="center">{row.parcelas}</TableCell>
-                            <TableCell align="center">
-                              {row.valor_parcela}
-                            </TableCell>
-                            <TableCell align="center">
-                              {row.valor_total}
-                            </TableCell>
-                          </TableRow>
-                        )
-                      )}
+                      .map((row) => (
+                        <TableRow key={row.id_opcao_pagamento}>
+                          <TableCell align="center">{row.parcelas}</TableCell>
+                          <TableCell align="center">
+                            {row.valor_parcela}
+                          </TableCell>
+                          <TableCell align="center">
+                            {row.valor_total}
+                          </TableCell>
+                        </TableRow>
+                      ))}
                   </TableBody>
                 </Table>
               </CardContent>
@@ -106,24 +138,17 @@ const ResultStep = () => {
                         (item: { metodo: string }) =>
                           item.metodo === "credit_card_porto"
                       )
-                      .map(
-                        (row: {
-                          id_opcao_pagamento: React.Key | null | undefined;
-                          parcelas:string;
-                          valor_parcela:string;
-                          valor_total:string;
-                        }) => (
-                          <TableRow key={row.id_opcao_pagamento}>
-                            <TableCell align="center">{row.parcelas}</TableCell>
-                            <TableCell align="center">
-                              {row.valor_parcela}
-                            </TableCell>
-                            <TableCell align="center">
-                              {row.valor_total}
-                            </TableCell>
-                          </TableRow>
-                        )
-                      )}
+                      .map((row) => (
+                        <TableRow key={row.id_opcao_pagamento}>
+                          <TableCell align="center">{row.parcelas}</TableCell>
+                          <TableCell align="center">
+                            {row.valor_parcela}
+                          </TableCell>
+                          <TableCell align="center">
+                            {row.valor_total}
+                          </TableCell>
+                        </TableRow>
+                      ))}
                   </TableBody>
                 </Table>
               </CardContent>
@@ -152,31 +177,50 @@ const ResultStep = () => {
                         (item: { metodo: string }) =>
                           item.metodo === "direct_debit"
                       )
-                      .map(
-                        (row: {
-                          id_opcao_pagamento: React.Key | null | undefined;
-                          parcelas:string;
-                          valor_parcela:string;
-                          valor_total:string;
-                        }) => (
-                          <TableRow key={row.id_opcao_pagamento}>
-                            <TableCell align="center">{row.parcelas}</TableCell>
-                            <TableCell align="center">
-                              {row.valor_parcela}
-                            </TableCell>
-                            <TableCell align="center">
-                              {row.valor_total}
-                            </TableCell>
-                          </TableRow>
-                        )
-                      )}
+                      .map((row) => (
+                        <TableRow key={row.id_opcao_pagamento}>
+                          <TableCell align="center">{row.parcelas}</TableCell>
+                          <TableCell align="center">
+                            {row.valor_parcela}
+                          </TableCell>
+                          <TableCell align="center">
+                            {row.valor_total}
+                          </TableCell>
+                        </TableRow>
+                      ))}
                   </TableBody>
                 </Table>
               </CardContent>
             </Card>
           </Grid>
         </Grid>
-        {/* {state.result.opcoes_pagamento} */}
+        <Typography
+          fontSize={20}
+          margin={theme.spacing(2, 0)}
+          fontWeight="bold"
+        >
+          Outras coberturas
+        </Typography>
+        <Grid container direction="row" spacing={theme.spacing(3)}>
+          {state.result.produtos[0].coberturas.map((coverage, index) => (
+            <Grid item xs={12} sm={6} lg={3} key={coverage.identificador}>
+              <CoverageItem index={index} coverage={coverage}></CoverageItem>
+            </Grid>
+          ))}
+          <Box marginRight={theme.spacing(1)} marginLeft={theme.spacing(6)}>
+            <Button variant="outlined" onClick={() => navigate("/")}>
+              Voltar para página inicial
+            </Button>
+          </Box>
+          <Button
+            variant="contained"
+            onClick={() => {
+              navigate("/property");
+            }}
+          >
+            Fazer a cotação de outro imóvel
+          </Button>
+        </Grid>
       </Box>
     </>
   );

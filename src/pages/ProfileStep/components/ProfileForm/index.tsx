@@ -300,6 +300,7 @@ const ProfileForm = ({ onSubmit }: ProfileFormParamsType) => {
             !(Object.keys(formik.errors || {}).length === 0 && !!formik.dirty)
           }
           onClick={formik.submitForm}
+          data-testid="submit-button"
         >
           <Typography padding={theme.spacing(0, 3)}>Finalizar</Typography>
         </Button>

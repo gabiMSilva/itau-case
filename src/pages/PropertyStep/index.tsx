@@ -18,7 +18,7 @@ import {
 import { Navbar } from "../../components";
 import { fetchOfferQuestions } from "../../services/QuestionsService";
 import { QuestionType } from "../../types/QuestionType";
-import useStyles from "./style";
+import useStyles from "./styles";
 import clsx from "clsx";
 import { useNavigate } from "react-router";
 
@@ -100,6 +100,7 @@ const PropertyStep = () => {
           justifyContent="center"
           width="100%"
           m={theme.spacing(4)}
+          data-testid="loading"
         >
           <CircularProgress />
         </Box>
@@ -107,6 +108,7 @@ const PropertyStep = () => {
         <Box
           p={theme.spacing(5)}
           maxWidth={theme.breakpoints.down("md") ? "100%" : "50%"}
+          data-testid="property-step"
         >
           {questions.map((question) => (
             <Fragment key={question.id_questao}>

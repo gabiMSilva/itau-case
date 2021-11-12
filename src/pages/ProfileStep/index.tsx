@@ -105,7 +105,7 @@ const ProfileStep = () => {
         step="3"
         title="Chegou a hora de reunir algumas informações sobre o titular do seguro, vamos lá?"
       ></Navbar>
-      <Grid p={theme.spacing(4)} container>
+      <Grid p={theme.spacing(4)} container data-testid="profile-step">
         <ProfileForm onSubmit={onSubmit} />
 
         <Typography
