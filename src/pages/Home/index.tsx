@@ -14,6 +14,7 @@ const Home = () => {
       direction="row"
       minHeight="100vh"
       className={classes.container}
+      data-testid="home"
     >
       <Grid
         md={5}
@@ -38,11 +39,7 @@ const Home = () => {
         justifyContent="center"
         alignItems="center"
         className={classes.rightContainer}
-        padding={
-          theme.breakpoints.down("md")
-            ? theme.spacing(10, 7)
-            : theme.spacing(7, 10, 7, 15)
-        }
+        padding={{ xs: theme.spacing(10, 7), md: theme.spacing(7, 10, 7, 15) }}
       >
         <Typography fontSize={32} textAlign="center" mb={theme.spacing(3)}>
           Existe coisa melhor do que <strong>se sentir seguro em casa</strong>?
@@ -56,6 +53,7 @@ const Home = () => {
             size="large"
             className={classes.button}
             onClick={() => navigate("/property")}
+            data-testid="next-button"
           >
             <Typography p={theme.spacing(0, 5)}>Vamos!</Typography>
           </Button>

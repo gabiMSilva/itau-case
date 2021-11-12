@@ -24,9 +24,7 @@ const ProfileForm = ({ onSubmit }: ProfileFormParamsType) => {
     md: 6,
     xs: 12,
     item: true,
-    padding: theme.breakpoints.up("md")
-      ? theme.spacing(2)
-      : theme.spacing(2, 0),
+    padding: { xs: theme.spacing(2, 0), md: theme.spacing(2) },
   };
 
   const formik = useFormik<ProfileType>({
@@ -100,7 +98,7 @@ const ProfileForm = ({ onSubmit }: ProfileFormParamsType) => {
 
   return (
     <>
-      <Grid {...gridParams}>
+      <Grid {...gridParams} data-testid="profile-form">
         <TextField
           required
           label="Nome completo"
@@ -222,7 +220,6 @@ const ProfileForm = ({ onSubmit }: ProfileFormParamsType) => {
       </Grid>
       <Grid {...gridParams}>
         <TextField
-          disabled
           required
           label="Cidade"
           name="city"
@@ -240,7 +237,6 @@ const ProfileForm = ({ onSubmit }: ProfileFormParamsType) => {
       </Grid>
       <Grid {...gridParams}>
         <TextField
-          disabled
           required
           label="Bairro"
           name="district"
