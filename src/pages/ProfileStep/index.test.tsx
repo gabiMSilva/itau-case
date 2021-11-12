@@ -1,5 +1,5 @@
 import ProfileStep from ".";
-import { render, fireEvent, waitFor } from "../../jest";
+import { render, fireEvent } from "../../jest";
 import { MemoryRouter } from "react-router";
 
 const mockedUsedNavigate = jest.fn();

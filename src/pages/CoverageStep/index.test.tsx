@@ -1,5 +1,10 @@
 import CoverageStep from ".";
-import { render, waitForElementToBeRemoved, fireEvent } from "../../jest";
+import {
+  render,
+  waitForElementToBeRemoved,
+  fireEvent,
+  waitFor,
+} from "../../jest";
 import { CoverageType } from "../../types/CoverageType";
 import { MemoryRouter } from "react-router";
 
@@ -42,16 +47,20 @@ describe("CoverageStep", () => {
       </MemoryRouter>
     );
     expect(getByTestId("loading")).toBeDefined();
+
     await waitForElementToBeRemoved(() => getByTestId("loading"));
+
     expect(getByTestId("coverage-step")).toBeDefined();
   });
 
   it("Should redirect if not have props", async () => {
-    render(
+    const { getByTestId } = render(
       <MemoryRouter initialEntries={[{ state: {} }]}>
         <CoverageStep />
       </MemoryRouter>
     );
+    await waitForElementToBeRemoved(() => getByTestId("loading"));
+
     expect(mockedUsedNavigate).toBeCalledWith("/");
   });
 
@@ -77,13 +86,14 @@ describe("CoverageStep", () => {
     );
 
     await waitForElementToBeRemoved(() => getByTestId("loading"));
-    
+
     fireEvent.click(
       document.querySelector(`input[name=${coverages[1].id_cobertura}]`) ||
         document
     );
     fireEvent.click(getByTestId("submit-button"));
 
+    await waitFor(() => expect(mockedUsedNavigate).toBeCalled());
     expect(mockedUsedNavigate.mock.calls[0][1].state.form.coverages).toContain(
       coverages[1].id_cobertura
     );
@@ -97,7 +107,7 @@ describe("CoverageStep", () => {
     );
 
     await waitForElementToBeRemoved(() => getByTestId("loading"));
-    
+
     fireEvent.click(
       document.querySelector(`input[name=${coverages[1].id_cobertura}]`) ||
         document
@@ -106,10 +116,11 @@ describe("CoverageStep", () => {
       document.querySelector(`input[name=${coverages[1].id_cobertura}]`) ||
         document
     );
+
     fireEvent.click(getByTestId("submit-button"));
 
-    expect(mockedUsedNavigate.mock.calls[0][1].state.form.coverages).not.toContain(
-      coverages[1].id_cobertura
-    );
+    expect(
+      mockedUsedNavigate.mock.calls[0][1].state.form.coverages
+    ).not.toContain(coverages[1].id_cobertura);
   });
 });

@@ -276,12 +276,6 @@ const ProfileForm = ({ onSubmit }: ProfileFormParamsType) => {
           value={formik.values.complement}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          error={!!formik.errors.complement && !!formik.touched.complement}
-          helperText={
-            !!formik.errors.complement && !!formik.touched.complement
-              ? formik.errors.complement
-              : undefined
-          }
           fullWidth
         />
       </Grid>

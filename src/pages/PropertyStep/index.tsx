@@ -163,6 +163,7 @@ const PropertyStep = () => {
               type="submit"
               variant="contained"
               size="large"
+              data-testid="submit-button"
               onClick={() => {
                 if (questionsAreValid()) {
                   navigate("/coverage", {
