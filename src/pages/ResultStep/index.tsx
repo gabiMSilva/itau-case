@@ -14,6 +14,7 @@ import {
 import { Box } from "@mui/system";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
+
 import { Navbar } from "../../components";
 import { CoverageResultType } from "../../types/CoverageType";
 import CoverageItem from "./components/CoverageItem";
@@ -49,9 +50,8 @@ const ResultStep = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log("statee", state?.result);
     if (!state?.result) navigate("/");
-  }, []);
+  }, [navigate, state?.result]);
 
   return (
     <>
@@ -94,7 +94,7 @@ const ResultStep = () => {
                     </TableRow>
                   </TableHead>
                   <TableBody>
-                    {state.result.opcoes_pagamento
+                    {state?.result.opcoes_pagamento
                       .filter(
                         (item: { metodo: string }) =>
                           item.metodo === "credit_card"
@@ -133,7 +133,7 @@ const ResultStep = () => {
                     </TableRow>
                   </TableHead>
                   <TableBody>
-                    {state.result.opcoes_pagamento
+                    {state?.result.opcoes_pagamento
                       .filter(
                         (item: { metodo: string }) =>
                           item.metodo === "credit_card_porto"
@@ -172,7 +172,7 @@ const ResultStep = () => {
                     </TableRow>
                   </TableHead>
                   <TableBody>
-                    {state.result.opcoes_pagamento
+                    {state?.result.opcoes_pagamento
                       .filter(
                         (item: { metodo: string }) =>
                           item.metodo === "direct_debit"
@@ -202,7 +202,7 @@ const ResultStep = () => {
           Outras coberturas
         </Typography>
         <Grid container direction="row" spacing={theme.spacing(3)}>
-          {state.result.produtos[0].coberturas.map((coverage, index) => (
+          {state?.result.produtos[0].coberturas.map((coverage, index) => (
             <Grid item xs={12} sm={6} lg={3} key={coverage.identificador}>
               <CoverageItem index={index} coverage={coverage}></CoverageItem>
             </Grid>
